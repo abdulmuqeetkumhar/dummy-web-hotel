@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin: 0px;
     padding: 0px;
@@ -169,4 +170,177 @@ body {
     .explore_btns{
         justify-content: center;
     }
+=======
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    height: 100vh;
+    background: url("./img/background_img.jpg") center / cover no-repeat;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    border-bottom: 1px solid white;
+    padding: 20px;
+    background-color: rgb(0, 0, 0, 0.2);
+}
+.menu{
+    display: none;
+    color: white;
+}
+.nav_explores ul,.bookings ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.nav_explores ul li,.bookings ul li{
+    display: block;
+}
+.nav_explores ul li a,.bookings ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+.bookings ul li button{
+    background-color: transparent;
+    border: 3px solid #E5B320;
+    color: #E5B320;
+    font-weight: 600;
+    padding: 10px 30px;
+    border-radius: 5px;
+
+}
+.logo{
+    display: flex;
+}
+.logo img{
+    height: 70px;
+}
+.banner{
+    display: flex;
+    height: 86.5vh;
+    align-items: end;
+    color: white;
+    font-size: 18px;
+    background-color: rgb(0, 0, 0,0.2);
+    padding: 50px;
+}
+.greetings{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.greetings p:nth-child(1){
+    color: #E5B320;
+    font-weight: 600;
+}
+.greetings h1{
+    font-size: 50px;
+}
+.greetings button{
+    background-color: transparent;
+    border: 3px solid #E5B320;
+    color: #E5B320;
+    font-weight: 600;
+    padding: 10px 30px;
+    border-radius: 5px;
+    width: 250px;
+}
+.explore_bar{
+    background-color: #0e1d36;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+.explore_btns{
+    display: flex;
+    gap: 20px;
+}
+.explore_btns button{
+    font-size: 13px;
+    font-weight: 600;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.explore_btns button:nth-child(2){
+    background-color: #E5B320;
+    border: none;
+}
+.rooms{
+    background-color: black;
+    color: white;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;    
+}
+.rooms_heading{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.rooms_heading h1{
+    font-size: 40px;
+}
+.rooms_imgs{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    display: flex;
+    justify-content: space-between;
+}
+.rooms_imgs img{
+    height: 80%;
+    width: 30%;
+}
+@media(max-width:1100px){
+    .nav_explores,.bookings{
+           display: none;
+       }
+    .menu{
+        display: block;
+        font-size: 25px;
+    }
+    .banner{
+        height: 60vh;
+    }
+    .rooms_imgs{
+        display: grid;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-columns: repeat(1,1fr);
+    }
+    .rooms_imgs img{
+        width: 100%;
+    }
+    .greetings p{
+        font-size: 15px;
+    }
+    .greetings h1{
+        font-size: 30px;
+    }
+    .explore_para p{
+        font-size: 12px;
+    }
+    .explore_btns button{
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+    .explore_bar{
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    .explore_btns{
+        justify-content: center;
+    }
+>>>>>>> 960a1df0e3e3c6d1bb4bbf5a57610d47214c2a34
 }
